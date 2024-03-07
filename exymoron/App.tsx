@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image} from 'react-native';
 import Login from './Login';
 import SignIn from './SignIn';
+import MainTabNavigator from './MainTabNavigator';
 import { SignInMethod } from 'firebase/auth';
 import ForgtPassword from './ForgtPassword';
 
@@ -18,7 +19,7 @@ export default function App() {
         <Stack.Screen name='Login' component={Login} options={{headerShown:false}} />
         <Stack.Screen name='SignIn' component={SignIn} options={{headerShown:false}} />
         <Stack.Screen name='ForgtPassword' component={ForgtPassword} options={{headerShown:false}} />
-        
+        <Stack.Screen name="MainApp" component={MainTabNavigator} options={{headerShown:false}} />
       </Stack.Navigator>
     </NavigationContainer>
     );
