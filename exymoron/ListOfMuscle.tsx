@@ -7,5 +7,8 @@ const ListOfMuscle = () =>{
     <Text>accha bhai tu bohet badia insan h man lia ab bas bhi kar :/</Text>
  )
 }
+const styles = StyleSheet.create({
+
+});
 
 export default ListOfMuscle;

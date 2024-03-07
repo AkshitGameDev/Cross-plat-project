@@ -29,7 +29,7 @@ const SignIn = () => {
         return(
             <View style={styles.container}>
                 <Image style={styles.logo}  source={require('./assets/LOGO.png')}/>
-                <Text style={styles.Heading}>Welcome Back,</Text>
+                <Text style={styles.Heading}>Welcome,</Text>
     
                 <TextInput style={styles.TextField}
                 value={email}

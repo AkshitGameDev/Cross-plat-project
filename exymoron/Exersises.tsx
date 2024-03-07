@@ -5,7 +5,9 @@ import { ImageBackground } from 'react-native';
 const Exersises = () =>{
  return(
     <></>
- )
+ );
 }
+const styles = StyleSheet.create({
 
+});
 export default Exersises;

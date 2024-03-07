@@ -22,7 +22,7 @@ function ExersiseStack () {
     headerShown:false,
     }}  component={AddExersie}/>
     </ExersiseSt.Navigator>
-   )
+   );
 }
 
 
