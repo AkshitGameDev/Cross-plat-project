@@ -17,7 +17,7 @@ const navigation = useNavigation();
         try{
             const response = await signInWithEmailAndPassword(auth, email,password);
             console.log('cjheck your email');
-            alert('check Your email');
+            navigation.navigate('MainApp');
         }
         catch(error:any){
             console.log(error)

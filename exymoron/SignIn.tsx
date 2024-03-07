@@ -16,6 +16,7 @@ const SignIn = () => {
             setLoading(true);
             try{
                const response =await createUserWithEmailAndPassword(auth,email,password);
+               navigation.navigate('MainApp');
                console.log(response);
             } catch(error:any){
                 console.log(error)
