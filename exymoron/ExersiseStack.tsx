@@ -14,16 +14,14 @@ function ExersiseStack () {
     <ExersiseSt.Navigator>
         <ExersiseSt.Screen name = "ListOfMuscle" options={{
     headerShown:false,
-    }}  component={ListOfMuscle}/>
+    }}  component={Exersises}/>
     <ExersiseSt.Screen name = "Exersises" options={{
     headerShown:false,
-    }}  component={Exersises}/>
+    }}  component={ListOfMuscle}/>
     <ExersiseSt.Screen name = "AddExersie" options={{
     headerShown:false,
     }}  component={AddExersie}/>
     </ExersiseSt.Navigator>
    );
 }
-
-
 export default ExersiseStack;
