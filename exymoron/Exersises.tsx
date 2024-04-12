@@ -25,6 +25,10 @@ const Exersises = () =>{
      setShowButton(false); // Hide the button after adding a new card
      
    };
+
+   const goToScreen = (screenName: string) => {
+    navigator.navigate(screenName);
+  };
  
    return (
      <View style={styles.container}>
@@ -33,15 +37,16 @@ const Exersises = () =>{
          <Text style={styles.pageTitle}>Exercises</Text>
        </View>
        <View style={styles.cardContainer}>
-         {cards.map((part, index) => (
-           <View key={index} style={styles.card}>
-            <TouchableOpacity onPress={navigator.navigate('')}>
-             <Image source={part.image} style={styles.image} />
-             <Text style={styles.title}>{part.title}</Text>
-             </TouchableOpacity>
-           </View>
-         ))}
-       </View>
+        {cards.map((part, index) => (
+          <View key={index} style={styles.card}>
+            <TouchableOpacity onPress={() => goToScreen(part.title)}>
+              {/* Render your card content (image, title, etc.) */}
+              <Image source={part.image} style={styles.image} />
+              <Text style={styles.title}>{part.title}</Text>
+            </TouchableOpacity>
+          </View>
+        ))}
+      </View>
        {showButton && (
          <TouchableOpacity onPress={addCard} style={styles.addButton}>
            <Text style={styles.buttonText}>+</Text>

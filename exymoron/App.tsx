@@ -7,6 +7,11 @@ import SignIn from './SignIn';
 import MainTabNavigator from './MainTabNavigator';
 import { SignInMethod } from 'firebase/auth';
 import ForgtPassword from './ForgtPassword';
+import Arms from './Arms';
+import Back from './Back';
+import Abs from './Abs';
+import Chest from './Chest';
+import Cardio from './Cardio';
 
 export default function App() {
 
@@ -20,6 +25,12 @@ export default function App() {
         <Stack.Screen name='SignIn' component={SignIn} options={{headerShown:false}} />
         <Stack.Screen name='ForgtPassword' component={ForgtPassword} options={{headerShown:false}} />
         <Stack.Screen name="MainApp" component={MainTabNavigator} options={{headerShown:false}} />
+        <Stack.Screen name="Arms" component={Arms} />
+        <Stack.Screen name="Back" component={Back} />
+        <Stack.Screen name="Abs" component={Abs} />
+        <Stack.Screen name="Chest"  component={Chest} />
+        <Stack.Screen name="Cardio"  component={Cardio} />
+        
       </Stack.Navigator>
     </NavigationContainer>
     );

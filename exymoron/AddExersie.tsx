@@ -6,8 +6,6 @@ import { ImageBackground } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { TextInput } from 'react-native-gesture-handler';
 
-
-
 const AddExersie = () =>{
    const [photo, setPhoto] = useState(null); // State to hold the photo URI
    const [title, setTitle] = useState(''); // State to hold the title text
@@ -77,7 +75,6 @@ const AddExersie = () =>{
      </View>
    );
 }
-
 
 export default AddExersie;
 
